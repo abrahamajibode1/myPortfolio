@@ -68,7 +68,7 @@ export function Contact() {
         </Link>
 
         <div
-          className="bg-[#d4ff47] flex flex-col items-center justify-center gap-8 px-8 py-4 rounded-lg transition-all duration-300"
+          className="bg-[#d4ff47] flex flex-col items-center justify-center gap-8 px-8 py-15 rounded-lg transition-all duration-300"
           style={{ fontFamily: "var(--font-mono)" }}
         >
           <h3 className="text-2xl font-bold">Connect with Me</h3>
