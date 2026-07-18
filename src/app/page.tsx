@@ -9,7 +9,7 @@ import { Footer } from "../components/web/Footer";
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="max-w-7xl mx-auto w-full px-5">
         <Hero />
         <About />
         <Skills />

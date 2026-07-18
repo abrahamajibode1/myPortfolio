@@ -7,11 +7,10 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="px-6 md:px-8 py-30 md:py-35 text-center rounded-2xl"
-      style={{ background: "var(--color-surface)" }}
+      className="py-10 md:py-15 items-center justify-center"
     >
       <h2
-        className="text-6xl font-bold tracking-[1px] mb-4"
+        className="text-5xl text-slate-200 text-center font-bold mb-4"
         style={{ fontFamily: "var(--font-mono)" }}
       >
         Contact
@@ -19,17 +18,17 @@ export function Contact() {
 
       {/* Big heading */}
       <div
-        className="text-4xl font-normal tracking-[2px] text-[#555] mb-16"
+        className="text-xl font-normal tracking-wider text-gray-300 text-center mb-7"
         style={{
           fontFamily: "var(--font-display)",
         }}
       >
         {contactCopy.heading1}{" "}
-        <span className="text-violet-500">{contactCopy.heading2}</span>
+        <span className="text-lime-300">{contactCopy.heading2}</span>
       </div>
 
       {/* Description */}
-      <p className="reveal reveal-delay-1 text-[20px] text-[#555] max-w-md mx-auto mb-12 leading-[1.75]">
+      <p className="reveal reveal-delay-1 text-lg text-gray-300 text-center max-w-md mx-auto mb-10 leading-normal">
         {contactCopy.desc}
       </p>
 
@@ -39,39 +38,39 @@ export function Contact() {
           href={`mailto:${personal.email}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex bg-[#d4ff47] items-center gap-3 px-8 py-4 rounded-lg transition-all duration-300"
+          className="inline-flex bg-slate-800 items-center gap-3 px-8 py-4 rounded-lg transition-all duration-300"
           style={{ fontFamily: "var(--font-mono)" }}
         >
           <div className="flex flex-col gap-4">
-            <h3 className="text-2xl font bold">Contact information</h3>
+            <h3 className="text-2xl text-slate-200 font bold">Contact information</h3>
 
             <div className="flex gap-5">
-              <Mail className="w-7 h-7 text-violet-500 hover:text-[#d4ff47] transition cursor-pointer" />
+              <Mail className="w-7 h-7 text-lime-300 transition cursor-pointer" />
               <div className="flex flex-col gap-1">
-                <p className="text-start text-[#555] text-xl font-semibold">
+                <p className="text-start text-gray-300 text-xl font-semibold">
                   Email
                 </p>
-                <p className="text-lg text-violet-600">{personal.email}</p>
+                <p className="text-lg text-lime-300">{personal.email}</p>
               </div>
             </div>
 
             <div className="flex gap-5">
-              <MapPin className="w-7 h-7 text-violet-500" />
+              <MapPin className="w-7 h-7 text-lime-300" />
               <div className="flex flex-col gap-1">
-                <p className="text-start text-[#555] text-xl font-semibold">
+                <p className="text-start text-gray-300 text-xl font-semibold">
                   Location
                 </p>
-                <p className="text-lg">{personal.location}</p>
+                <p className="text-lg text-lime-300">{personal.location}</p>
               </div>
             </div>
           </div>
         </Link>
 
         <div
-          className="bg-[#d4ff47] flex flex-col items-center justify-center gap-8 px-8 py-15 rounded-lg transition-all duration-300"
+          className="bg-slate-800 flex flex-col items-center justify-center gap-8 px-8 py-15 rounded-lg transition-all duration-300"
           style={{ fontFamily: "var(--font-mono)" }}
         >
-          <h3 className="text-2xl font-bold">Connect with Me</h3>
+          <h3 className="text-2xl text-slate-200 font-bold">Connect with Me</h3>
 
           <div className="inline-flex items-center gap-5">
             <Link
@@ -80,7 +79,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <FaGithub className="w-7 h-7 text-violet-500" />
+              <FaGithub className="w-7 h-7 text-lime-300" />
             </Link>
 
             <Link
@@ -89,7 +88,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <FaTwitter className="w-7 h-7 text-violet-500" />
+              <FaTwitter className="w-7 h-7 text-lime-300" />
             </Link>
 
             <Link
@@ -98,7 +97,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <FaWhatsapp className="w-7 h-7 text-violet-500" />
+              <FaWhatsapp className="w-7 h-7 text-lime-300" />
             </Link>
           </div>
         </div>

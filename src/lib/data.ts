@@ -15,7 +15,6 @@ export const personal = {
   briefBio:
     "I craft dynamic, responsive, and visually compelling web applications, specializing in frontend engineering that blends clean, fast, and beautiful web experiences with React & Next.js.",
   bio: [
-    "Hello! I'm Abraham. A self-taught frontend developer from Lagos, Nigeria. I started my journey with pure curiosity, watching YouTube tutorials at midnight, building small projects just to see if I could.",
     "I went from writing my first HTML page to shipping full-stack-looking interfaces with React and Next.js. No bootcamp, no CS degree, just relentless practice, a love for the craft, and the guidance of someone who believed in me before I believed in myself.",
     "I've been fortunate to have a mentor who walked me through the hard parts step by step, breaking down concepts, pushing me when I got stuck, and showing me what it actually looks like to build real things. This journey wouldn't look the same without that support.",
     "I don't have years of experience yet, but I have hunger, consistency, and a genuine love for building things. I'm looking for a team that will bet on potential, not just a resume.",
@@ -30,9 +29,9 @@ export const personal = {
 };
 
 export const stats = [
-  { number: "1+", label: "Year of learning" },
-  { number: "6+", label: "Projects built" },
-  { number: "5", label: "Tech mastered" },
+  { number: "1+", label: "Year of learning", href: "#journey" },
+  { number: "2+", label: "Projects built", href: "#projects" },
+  { number: "5", label: "Tech mastered", href: "#skills" },
   { number: "∞", label: "Willingness to learn" },
 ];
 

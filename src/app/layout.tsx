@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "../components/web/navbar";
+import { Navbar } from "../components/web/Navbar";
+import { SpotlightWrapper } from "../components/web/SpotlightWrapper";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -27,11 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body>
+      <body className="bg-slate-900">
         <Navbar />
-        <main className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
-          {children}
-        </main>
+        <div>
+          <SpotlightWrapper>{children}</SpotlightWrapper>
+        </div>
       </body>
     </html>
   );

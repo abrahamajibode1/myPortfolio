@@ -5,23 +5,21 @@ export function Skills() {
   const marquee = [...marqueeItems, ...marqueeItems];
 
   return (
-    <section id="skills" className="flex flex-col items-center justify-center py-10 md:py-15">
-      <h2
-        className="text-4xl font-bold tracking-[1px] mb-4"
-      >
+    <section
+      id="skills"
+      className="flex flex-col items-center justify-center py-10 md:py-15"
+    >
+      <h2 className="text-4xl text-slate-200 font-bold mb-4">
         Skills and Expertise
       </h2>
-      <h3
-        className="reveal text-xl [font-family:var(--font-geist-sans)] font-normal tracking-[2px] text-violet-500 mb-16"
-      >
+      <h3 className="reveal text-xl text-center font-normal tracking-normal text-gray-300 mb-10">
         Technologies and tools I work with
       </h3>
 
       {/* Marquee */}
-      <div className="max-w-6xl mx-auto w-full px-4 md:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <div
-          className="overflow-hidden border-y-4 rounded-3xl py-4 mb-16"
-          style={{ borderColor: "var(--color-border)" }}
+          className="overflow-hidden border-y-2 border-gray-300 rounded-3xl py-4 mb-16"
         >
           <div
             className="flex gap-12 whitespace-nowrap"
@@ -30,10 +28,10 @@ export function Skills() {
             {marquee.map((item, i) => (
               <span
                 key={i}
-                className="text-[28px] tracking-[3px] shrink-0"
+                className="text-2xl tracking-wider shrink-0"
                 style={{
                   fontFamily: "var(--font-display)",
-                  color: item.accent ? "#d4ff47" : "#242424",
+                  color: item.accent ? "#d4ff47" : "white",
                 }}
               >
                 {item.text}
@@ -43,29 +41,23 @@ export function Skills() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-[10px]">
-        {skills.map((skill, i) => (
+      <div className="max-w-4xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
+        {skills.map((skill) => (
           <div
-            key={i}
-            className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden border p-7 cursor-pointer`}
-            style={{
-              background: "var(--color-surface)",
-              borderColor: "var(--color-border)",
-            }}
+            key={skill.icon}
+            className={`reveal reveal-delay-${(skill % 4) + 1} group relative bg-slate-800 overflow-hidden p-7 cursor-pointer`}
           >
             <div
               className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-[400ms] ease-[cubic-bezier(.16,1,.3,1)]"
               style={{ background: "var(--color-accent)" }}
             />
             <div className="relative">
-              <div className="text-[26px] mb-3">{skill.icon}</div>
-              <div
-                className="text-[15px] font-medium mb-1 group-hover:text-[#080808] transition-colors duration-300"
-              >
+              <div className="text-3xl mb-2">{skill.icon}</div>
+              <div className="text-xl text-lime-300 font-medium mb-2 group-hover:text-black transition-colors duration-300">
                 {skill.name}
               </div>
               <div
-                className="text-[10px] tracking-[1px] uppercase text-[#555] group-hover:text-[#080808] group-hover:opacity-60 transition-colors duration-300"
+                className="text-xs tracking-wider uppercase text-gray-300 group-hover:text-black group-hover:opacity-60 transition-colors duration-300"
                 style={{ fontFamily: "var(--font-mono)" }}
               >
                 {skill.level}
