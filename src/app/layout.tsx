@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "../components/web/Nav
+import { Navbar } from "../components/web/Navbar";
 import { SpotlightWrapper } from "../components/web/SpotlightWrapper";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
