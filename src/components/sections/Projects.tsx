@@ -31,7 +31,7 @@ export function Projects() {
             rel="noopener noreferrer"
             className={`reveal group relative bg-slate-800 grid grid-cols-[56px_1fr] md:grid-cols-[80px_1fr_auto] items-center gap-6 md:gap-8 px-6 md:px-8 py-6 md:py-7 border-none rounded-2xl no-underline overflow-hidden cursor-pointer`}
           >
-            {/* Number */}
+
             <div
               className="text-4xl md:text-5xl leading-none text-slate-200"
               style={{ fontFamily: "var(--font-display)" }}
